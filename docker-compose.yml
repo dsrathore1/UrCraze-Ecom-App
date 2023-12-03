@@ -1,0 +1,21 @@
+version: "3"
+
+volumes:
+  uvol:
+    name: "urcraze-vol"
+
+services:
+  next-app:
+    container_name: "ecommerce-app"
+    build: ./
+    volumes:
+      - uvol:/app/ur-craze
+      - ./:/app/ur-craze
+      - ./app:/app/ur-craze
+    env_file:
+      - .env
+    expose:
+      - "${PORT}"
+    stdin_open: true
+    ports:
+      - "${PORT}:${PORT}"
