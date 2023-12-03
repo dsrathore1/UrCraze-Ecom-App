@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const ProductCard = ({ product }) => {
     return (
-        <div className="bg-white p-4 shadow-md rounded-md">
+        <div className="bg-cardBg p-4 h-[70vh] shadow-md rounded-md hover:scale-[.9] duration-[.8s] ease-in-out transition-all relative ">
             <Image src={product.image} alt={product.name} width={500} height={400} className="w-full h-[18rem] object-cover mb-4 rounded-md" priority={true} />
-            <h3 className="text-lg font-bold text-black capitalize tracking-wide">{product.name}</h3>
-            <p className="text-gray-500">{product.description}</p>
+            <h2 className="text-xl font-bold text-white capitalize tracking-wide">{product.name}</h2>
+            <p className="text-gray-300 my-4 text-ellipsis overflow-hidden whitespace-nowrap">{product.description}</p>
             <p className="text-amber font-bold mt-2">₹{product.price}</p>
-            <div className="flex items-center justify-between">
-                <button className="bg-amber text-white px-4 py-2 mt-4 rounded-md">Add to Cart</button>
-                <button className="border-amber border-2 text-black px-4 py-2 mt-4 rounded-md">Buy Now</button>
+            <div className="flex items-center justify-between px-5">
+                <button className="bg-amber hover:bg-lightAmber text-white px-4 py-2 mt-4 rounded-md cursor-pointer">Add to Cart</button>
+                <button className="border-amber hover:border-darkAmber border-2 text-white px-4 py-2 mt-4 rounded-md">Buy Now</button>
 
             </div>
         </div>

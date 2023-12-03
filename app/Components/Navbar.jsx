@@ -34,7 +34,7 @@ const Navbar = () => {
     }, [ref]);
 
     return (
-        <nav className="bg-dark p-4 flex items-center justify-center">
+        <nav className="bg-[#00000057]  p-4 flex w-full items-center justify-center fixed backdrop-blur-sm z-50">
             <div className="container mx-auto flex items-center justify-between">
                 {/* Logo and Title */}
                 <Link href="/">
@@ -56,35 +56,35 @@ const Navbar = () => {
                 {/* Navigation Links */}
                 <div className="flex items-center space-x-7">
                     <Link href="/">
-                        <p className="text-amber cursor-pointer hover:text-yellow-300">Home</p>
+                        <p className="text-amber cursor-pointer hover:text-lightAmber">Home</p>
+                    </Link>
+                    <Link href="/about">
+                        <p className="text-amber cursor-pointer hover:text-lightAmber">About</p>
                     </Link>
                     <Link href="#">
-                        <p className="text-amber cursor-pointer hover:text-yellow-300">About</p>
+                        <p className="text-amber hover:text-lightAmber">Account</p>
                     </Link>
                     <Link href="#">
-                        <p className="text-amber hover:text-yellow-300">Account</p>
-                    </Link>
-                    <Link href="#">
-                        <p className="text-amber cursor-pointer hover:text-yellow-300">Contact Us</p>
+                        <p className="text-amber cursor-pointer hover:text-lightAmber">Contact Us</p>
                     </Link>
 
                     {/* Dropdown */}
                     <div className='relative group'>
-                        <p className='text-amber cursor-pointer hover:text-yellow-300'>More</p>
+                        <p className='text-amber cursor-pointer hover:text-lightAmber'>More</p>
 
                         {/* Dropdown Content */}
                         <div className='absolute hidden text-center bg-dark w-52 shadow-xl group-hover:block rounded-lg'>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-yellow-300">Account</p>
+                                <p className="block py-2 w-full hover:text-lightAmber">Account</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-yellow-300">Bill</p>
+                                <p className="block py-2 w-full hover:text-lightAmber">Bill</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-yellow-300">Orders</p>
+                                <p className="block py-2 w-full hover:text-lightAmber">Orders</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-yellow-300">Add to Cart</p>
+                                <p className="block py-2 w-full hover:text-lightAmber">Add to Cart</p>
                             </Link>
                         </div>
                     </div>
