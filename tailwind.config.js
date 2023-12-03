@@ -7,13 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        "extra-loose": '55px',
+      },
       colors: {
         dark: '#1a202c', // Dark background color
         amber: '#FF8474', // Amber color
         lightAmber: '#FFAB83', // Light Amber color for hover effects, if needed
-        darkAmber:'#a93750', // Dark amber color for extra depth
+        darkAmber: '#a93750', // Dark amber color for extra depth
         white: '#ffffff', // White color
-        cardBg:'#2D2D2D', // Dark Background for cards
+        cardBg: '#2D2D2D', // Dark Background for cards
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
