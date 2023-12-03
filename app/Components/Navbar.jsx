@@ -59,10 +59,10 @@ const Navbar = () => {
                         <p className="text-amber cursor-pointer hover:text-lightAmber">Home</p>
                     </Link>
                     <Link href="/about">
-                        <p className="text-amber cursor-pointer hover:text-lightAmber">About</p>
+                        <p className="text-amber cursor-pointer hover:text-lightAmber">About Us</p>
                     </Link>
-                    <Link href="#">
-                        <p className="text-amber hover:text-lightAmber">Account</p>
+                    <Link href="/cart">
+                        <p className="text-amber hover:text-lightAmber">Cart</p>
                     </Link>
                     <Link href="#">
                         <p className="text-amber cursor-pointer hover:text-lightAmber">Contact Us</p>

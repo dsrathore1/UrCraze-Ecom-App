@@ -10,7 +10,6 @@ const ProductCard = ({ product }) => {
             <div className="flex items-center justify-between px-5">
                 <button className="bg-amber hover:bg-lightAmber text-white px-4 py-2 mt-4 rounded-md cursor-pointer">Add to Cart</button>
                 <button className="border-amber hover:border-darkAmber border-2 text-white px-4 py-2 mt-4 rounded-md">Buy Now</button>
-
             </div>
         </div>
     );

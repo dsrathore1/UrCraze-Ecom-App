@@ -1,6 +1,7 @@
 "use client"
 import { Kaushan_Script } from 'next/font/google';
 import Image from 'next/image';
+import AboutUsImage from "../Assets/about.svg";
 
 export const k_s = Kaushan_Script({
     subsets: ["latin"],
@@ -14,14 +15,17 @@ const AboutPage = () => {
         <div className="pt-16 text-white bg-pattern">
             <div className="container mx-auto text-center my-4">
                 <h1 className="text-5xl font-extrabold mb-4 text-amber uppercase leading-extra-loose">Welcome to <br /><span className={`${k_s.className} font-bold capitalize`}>UrCraze</span></h1>
-                <p className="text-lg mx-96 italic text-gray-300">
-                    Elevate your lifestyle with UrCraze - A curated collection of exceptional products
-                    designed to inspire and delight.
-                </p>
+                <p className="text-xl mx-96 italic mb-10 text-gray-300">Elevate your lifestyle with UrCraze - A curated collection of exceptional products
+                    designed to inspire and delight.</p>
+                <h2 className='text-5xl mt-14 mb-6 text-bold'>Abo<span className='text-amber'>ut Us</span></h2>
+                <div className='flex justify-between items-center'>
+                    <p className='text-lg text-gray-300 mx-20 text-justify'><span className={`${k_s.className} text-white`}>UrCraze.</span> is not just an online marketplace, it&apos;s an experience designed to redefine your shopping journey. Dive into a world where every product tells a unique story, and every purchase is a step towards elevating your lifestyle. At <span className={`${k_s.className} text-white`}>UrCraze.</span>, we don&apos;t just sell products; we craft experiences. Our mission is to provide you with a curated collection of exceptional products that inspire, delight, and elevate your lifestyle. Whether you&apos;re a trendsetter, a tech enthusiast, or someone seeking unique finds, <span className={`${k_s.className} text-white`}>UrCraze.</span> is your go-to destination for discovery and satisfaction.</p>
+                    <Image src={AboutUsImage} alt='aboutUs' height={70} width={600} />
+                </div>
             </div>
 
             {/* Founder Section */}
-            <div className="py-16">
+            <div className="py-12">
                 <div className="container mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-8 text-white">Meet our visionary Founder</h2>
                     <div className="flex flex-col justify-center items-center">
@@ -34,7 +38,7 @@ const AboutPage = () => {
                                 height={50} />
                         </div>
                         <div className="md:ml-8 text-center my-5">
-                            <p className="text-lg mb-4 text-gray-300 ">Meet <span className='font-bold text-lg text-white'>John Doe</span>, the creative force behind <span className={`${k_s.className} text-white`}>UrCraze.</span> With a passion for discovering
+                            <p className="text-lg mb-4 text-gray-300 mx-14">Meet <span className='font-bold text-lg text-white'>John Doe</span>, the creative force behind <span className={`${k_s.className} text-white`}>UrCraze.</span> With a passion for discovering
                                 extraordinary products, <span className={`font-bold text-lg text-white`}>John</span> has redefined the online shopping experience.
                                 His journey began with a simple idea: to curate a collection that transcends the
                                 ordinary, bringing joy and satisfaction to every <span className={`${k_s.className} text-white`}>UrCraze.</span> customer. <span className={`font-bold text-lg text-white`}>John&apos;s</span> commitment
