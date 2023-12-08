@@ -64,7 +64,7 @@ const Navbar = () => {
                     <Link href="/cart">
                         <p className="text-amber hover:text-lightAmber">Cart</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="/contactUs">
                         <p className="text-amber cursor-pointer hover:text-lightAmber">Contact Us</p>
                     </Link>
 
