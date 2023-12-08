@@ -16,7 +16,7 @@ const ContactForm = () => {
 
     return (
         <div className='w-full h-screen flex flex-col justify-center items-center'>
-            <h1 className='text-6xl'>Contact Us</h1>
+            <h1 className='text-6xl select-none'>Contact Us</h1>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto w-full p-4">
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-white text-md font-medium mb-2">
@@ -28,7 +28,7 @@ const ContactForm = () => {
                         name="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full p-2 border text-black border-gray-300 outline-none rounded"
+                        className="w-full p-2 border text-black outline-4 outline-amber rounded"
                         required
                     />
                 </div>
@@ -43,7 +43,7 @@ const ContactForm = () => {
                         name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full p-2 border border-gray-300 outline-none rounded"
+                        className="w-full p-2 border outline-4 outline-amber rounded"
                         required
                     />
                 </div>
@@ -57,7 +57,7 @@ const ContactForm = () => {
                         name="message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        className="w-full p-2 border outline-none border-gray-300 rounded"
+                        className="w-full p-2 border outline-amber outline-6 rounded"
                         rows="4"
                         required
                     ></textarea>
