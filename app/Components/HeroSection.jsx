@@ -12,7 +12,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-black opacity-60"></div>
             <div className="mx-auto text-center relative h-[60vh] z-20">
                 <div className="w-full grid justify-center items-center">
-                    <h1 className="text-6xl w-[50vw] font-bold mb-1 cursor-default">Discover the <span className={`${k_s.className} font-black text-amber`}>UrCraze</span> Experience</h1>
+                    <h1 className="text-6xl w-[50vw] font-bold mb-1 bg-none select-none">Discover the <span className={`${k_s.className} font-black text-amber`}>UrCraze</span> Experience</h1>
                     <p className="text-md mb-4 cursor-default">Explore a world of amazing <span className="text-amber font-semibold"> products and shop with confidence.</span></p>
                     <div>
                         <button className="bg-amber text-white px-6 py-3 rounded-full hover:bg-lightAmber transition duration-300 cursor-pointer">

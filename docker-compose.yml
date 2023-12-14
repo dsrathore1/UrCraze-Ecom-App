@@ -41,9 +41,9 @@ services:
       - PSQL-vol:/var/lib/postgresql/data
     #! Main Content
     environment:
+      POSTGRES_DATABASE: ${PSQL_MAIN_DB}
       POSTGRES_USER: ${PSQL_USER}
       POSTGRES_PASSWORD: ${PSQL_PWD}
-      POSTGRES_DATABASE: ${PSQL_DB}
     env_file:
       - .env
     depends_on:

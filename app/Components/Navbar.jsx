@@ -90,7 +90,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <button className='mx-10 bg-amber px-8 py-2 rounded-sm shadow-md text-black font-semibold'>Logout</button>
+            <button className='mx-10 bg-amber px-8 py-2 rounded-sm shadow-md text-black font-semibold' onClick={() => { window.location.href = '/login' }}>Login</button>
         </nav>
     );
 };

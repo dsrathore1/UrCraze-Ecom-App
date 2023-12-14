@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -9,9 +8,8 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your form submission logic here
         console.log('Form submitted:', { name, email, message });
-        // You can send the form data to your server or API endpoint
+
     };
 
     return (
@@ -28,7 +26,7 @@ const ContactForm = () => {
                         name="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full p-2 border text-black outline-4 outline-amber rounded"
+                        className="w-full p-2 bg-gray-800 border border-gray-600 text-white rounded"
                         required
                     />
                 </div>
@@ -43,7 +41,7 @@ const ContactForm = () => {
                         name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full p-2 border outline-4 outline-amber rounded"
+                        className="w-full p-2 bg-gray-800 border border-gray-600 text-white rounded"
                         required
                     />
                 </div>
@@ -57,7 +55,7 @@ const ContactForm = () => {
                         name="message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        className="w-full p-2 border outline-amber outline-6 rounded"
+                        className="w-full p-2 bg-gray-800 border border-gray-600 text-white rounded"
                         rows="4"
                         required
                     ></textarea>
