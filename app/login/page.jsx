@@ -46,11 +46,11 @@ const LoginPage = () => {
 
                 <button
                     type="submit"
-                    className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition"
+                    className="bg-red-500 text-white py-2 px-4 rounded hover_bg-red-600 transition"
                 >Login</button>
             </form>
             <div>
-                <p>Do not have an account? <button className="text-amber py-2 rounded hover:text-darkAmber transition" onClick={() => { window.location.href = "/signUp" }}>Sign Up</button></p>
+                <p>Do not have an account? <button className="text-amber py-2 rounded hover_text-darkAmber transition" onClick={() => { window.location.href = "/signUp" }}>Sign Up</button></p>
             </div>
         </div>
     );

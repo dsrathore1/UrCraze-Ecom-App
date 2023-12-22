@@ -12,8 +12,8 @@ module.exports = {
       },
       colors: {
         dark: '#1a202c', // Dark background color
-        amber: '#FF8474', // Amber color
-        lightAmber: '#FFAB83', // Light Amber color for hover effects, if needed
+        amber: '#FEBA45', // Amber color
+        lightAmber: '#ffcc77', // Light Amber color for hover effects, if needed
         darkAmber: '#a93750', // Dark amber color for extra depth
         white: '#ffffff', // White color
         cardBg: '#2D2D2D', // Dark Background for cards
@@ -23,6 +23,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        '10xl': '20rem'
+      }
     },
   },
   variants: {},

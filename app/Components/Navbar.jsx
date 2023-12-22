@@ -56,35 +56,35 @@ const Navbar = () => {
                 {/* Navigation Links */}
                 <div className="flex items-center space-x-7">
                     <Link href="/">
-                        <p className="text-amber cursor-pointer hover:text-lightAmber">Home</p>
+                        <p className="text-amber cursor-pointer hover_text-lightAmber">Home</p>
                     </Link>
                     <Link href="/about">
-                        <p className="text-amber cursor-pointer hover:text-lightAmber">About Us</p>
+                        <p className="text-amber cursor-pointer hover_text-lightAmber">About Us</p>
                     </Link>
                     <Link href="/cart">
-                        <p className="text-amber hover:text-lightAmber">Cart</p>
+                        <p className="text-amber hover_text-lightAmber">Cart</p>
                     </Link>
                     <Link href="/contactUs">
-                        <p className="text-amber cursor-pointer hover:text-lightAmber">Contact Us</p>
+                        <p className="text-amber cursor-pointer hover_text-lightAmber">Contact Us</p>
                     </Link>
 
                     {/* Dropdown */}
                     <div className='relative group'>
-                        <p className='text-amber cursor-pointer hover:text-lightAmber'>More</p>
+                        <p className='text-amber cursor-pointer hover_text-lightAmber'>More</p>
 
                         {/* Dropdown Content */}
-                        <div className='absolute hidden text-center bg-dark w-52 shadow-xl group-hover:block rounded-lg'>
+                        <div className='absolute hidden text-center bg-dark w-52 shadow-xl group-hover_block rounded-lg'>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-lightAmber">Account</p>
+                                <p className="block py-2 w-full hover_text-lightAmber">Account</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-lightAmber">Bill</p>
+                                <p className="block py-2 w-full hover_text-lightAmber">Bill</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-lightAmber">Orders</p>
+                                <p className="block py-2 w-full hover_text-lightAmber">Orders</p>
                             </Link>
                             <Link href="#">
-                                <p className="block py-2 w-full hover:text-lightAmber">Add to Cart</p>
+                                <p className="block py-2 w-full hover_text-lightAmber">Add to Cart</p>
                             </Link>
                         </div>
                     </div>
