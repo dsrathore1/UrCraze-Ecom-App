@@ -68,26 +68,9 @@ const Navbar = () => {
                         <p className="text-amber cursor-pointer hover_text-lightAmber">Contact Us</p>
                     </Link>
 
-                    {/* Dropdown */}
-                    <div className='relative group'>
-                        <p className='text-amber cursor-pointer hover_text-lightAmber'>More</p>
-
-                        {/* Dropdown Content */}
-                        <div className='absolute hidden text-center bg-dark w-52 shadow-xl group-hover_block rounded-lg'>
-                            <Link href="#">
-                                <p className="block py-2 w-full hover_text-lightAmber">Account</p>
-                            </Link>
-                            <Link href="#">
-                                <p className="block py-2 w-full hover_text-lightAmber">Bill</p>
-                            </Link>
-                            <Link href="#">
-                                <p className="block py-2 w-full hover_text-lightAmber">Orders</p>
-                            </Link>
-                            <Link href="#">
-                                <p className="block py-2 w-full hover_text-lightAmber">Add to Cart</p>
-                            </Link>
-                        </div>
-                    </div>
+                    <Link href="#">
+                        <p className='text-amber cursor-pointer hover_text-lightAmber'>Account</p>
+                    </Link>
                 </div>
             </div>
             <button className='mx-10 bg-amber px-8 py-2 rounded-sm shadow-md text-black font-semibold' onClick={() => { window.location.href = '/login' }}>Login</button>

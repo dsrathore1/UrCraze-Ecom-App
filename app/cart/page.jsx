@@ -22,7 +22,7 @@ const Cart = () => {
     return (
         <div className="container mx-auto pt-24 px-4 ">
             <h1 className="text-3xl font-semibold mb-4">Shopping Cart :-</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 my-5 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {cartItems.map((item) => (
                     <div key={item.id} className="bg-cardBg p-4 rounded shadow-md  flex flex-col justify-center items-center">
                         <div className="w-2/3 h-40 overflow-hidden bg-red-400">
