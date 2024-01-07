@@ -1,5 +1,4 @@
 "use client"
-import { k_s } from "./Navbar";
 
 // components/HeroSection.js
 const HeroSection = () => {
@@ -10,16 +9,12 @@ const HeroSection = () => {
     return (
         <div className="relative bg-dark text-white mb-5 pt-[40vh]" style={heroStyles}>
             <div className="absolute inset-0 bg-black opacity-60"></div>
-            <div className="mx-auto text-center relative h-[60vh] z-20">
-                <div className="w-full grid justify-center items-center">
-                    <h1 className="text-6xl w-[50vw] font-bold mb-1 bg-none select-none">Discover the <span className={`${k_s.className} font-black text-amber`}>UrCraze</span> Experience</h1>
-                    <p className="text-md mb-4 cursor-default">Explore a world of amazing <span className="text-amber font-semibold"> products and shop with confidence.</span></p>
-                    <div>
-                        <button className="bg-amber text-white px-6 py-3 rounded-full hover_bg-lightAmber transition duration-300 cursor-pointer">
-                            Shop Now
-                        </button>
-                    </div>
+            <div className="relative h-[60vh] z-20 flex flex-col items-start">
+                <div className="flex justify-center gap-2 items-center ml-32 mb-10 text-lg">
+                    <div className="w-32 h-[2px] bg-amber"></div>
+                    let&apos;s try new in
                 </div>
+                <h1 className={`font-medium text-7xl tracking-wider ml-32`}>WINTER 2024</h1>
             </div>
         </div>
     );

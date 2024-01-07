@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
