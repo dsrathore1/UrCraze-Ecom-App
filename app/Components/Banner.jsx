@@ -5,7 +5,7 @@ import ShoppingModel from "../Assets/sm.png";
 import Image from "next/image";
 import { Bebas_Neue } from 'next/font/google';
 
-const b_n = Bebas_Neue({
+export const b_n = Bebas_Neue({
     style: ["normal"],
     subsets: ["latin"],
     weight: ["400"]
@@ -15,15 +15,22 @@ const b_n = Bebas_Neue({
 const Banner = () => {
     return (
         <>
-            <div className='my-8'>
-                <h2 className='text-4xl font-light my-10 uppercase '>Offers and Deals</h2>
+            <div className='my-4'>
+                <div className='w-full flex flex-col justify-center items-center my-10'>
+                    <div className='flex gap-3 items-center'>
+                        <div className='bg-white w-24 h-[1px]' />
+                        <span className='text-xl capitalize'>Made the good way</span>
+                        <div className='bg-white w-24 h-[1px]' />
+                    </div>
+                    <h2 className={`text-8xl tracking-wide my-3 uppercase ${b_n.className}`}>Super Offer</h2>
+                </div>
                 <div className='md:flex h-[70vh] w-full hidden relative'>
                     <div className='line absolute bg-black h-[85vh] rotate-[25deg] w-[20rem] right-[35rem] -bottom-[6rem] z-0' />
                     <div className='bg-amber h-full w-full relative'>
                         <div className='absolute w-[200px] h-[100px] bg-black rounded-t-[150px] rounded-r-[150px] rounded-l-[150px] rotate-180 left-8 top-0 rounded-b-none rounded-bl-none rounded-br-none' />
                         <div className='absolute right-[15rem] top-[8rem] circle h-16 w-16 bg-amber border-solid border-black border-[1rem] rounded-full' />
                         <div className='absolute left-[8rem] bottom-[5rem] circle h-16 w-16 bg-amber border-solid border-black border-[1rem] rounded-full' />
-                        <Image className='absolute -right-40 -top-6 z-10' src={ShoppingModel} height={100} width={400} alt='shopping'/>
+                        <Image className='absolute -right-40 -top-6 z-10' src={ShoppingModel} height={100} width={400} alt='shopping' />
                         <div className={`${b_n.className} flex flex-col absolute left-20 top-10`}>
                             <h1 className='text-5xl tracking-wider text-white uppercase drop-shadow-md'>Super sale</h1>
                             <div className='flex justify-center items-center font-extrabold drop-shadow-lg text-[#EF223A]'>
