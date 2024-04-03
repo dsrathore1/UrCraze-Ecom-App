@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "dotenv": "^16.3.1",
     "moment": "^2.29.4",
     "mongoose": "^8.0.3",
@@ -16,7 +17,7 @@
     "pg": "^8.11.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
